@@ -39,6 +39,8 @@ public class CUILevelSelectController : MonoBehaviour {
 				this.m_SaveLevel.isCompleted(mapDisplay.name),
 				this.SubmitLevel
 			);
+			levelItem.transform.localPosition = Vector3.zero;
+			levelItem.transform.localScale = Vector3.one;
 		}
 		this.m_LevelItemPrefab.gameObject.SetActive(false);
 	}

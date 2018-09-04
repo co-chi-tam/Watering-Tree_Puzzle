@@ -161,7 +161,10 @@ public class CCloud : MonoBehaviour {
 		this.m_IsRotationHandling = true;
 		var parent = this.m_Transform == null ? this.transform: this.m_Transform;
 		var transAxis = parent.InverseTransformDirection(value);
-		var intAxis = new Vector3((int) (transAxis.x), (int) (transAxis.y), (int) (transAxis.z));
+		var intAxis = transAxis;
+		intAxis.x = Mathf.Round(intAxis.x / 90f) * 90f;
+		intAxis.y = Mathf.Round(intAxis.y / 90f) * 90f;
+		intAxis.z = Mathf.Round(intAxis.z / 90f) * 90f;
 		this.m_RotationSpot = parent.rotation * Quaternion.Euler (intAxis);
 		StartCoroutine (this.HandleRotation(this.m_RotationSpot, wait, callback));
 	}

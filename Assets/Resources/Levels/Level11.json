@@ -396,7 +396,7 @@
   "backgroundColor": "#FDED80",
   "tileBorderFolder": "Tiles/Desert/Borders",
   "tileFolder": "Tiles/Desert/Tiles",
-  "markerFolder": "Markers/Desert//",
+  "markerFolder": "Markers/Desert/",
   "cloudFolder": "Clouds/Group/",
   "rainFolder": "Rains/Water/"
 }

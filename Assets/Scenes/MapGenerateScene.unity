@@ -237,7 +237,7 @@ MonoBehaviour:
   m_UIState: {fileID: 115667803}
   m_StartSelectPoint: {x: 0, y: 0, z: 0}
   m_EndSelectPoint: {x: 0, y: 0, z: 0}
-  m_MapAsset: {fileID: 4900000, guid: 2afd70a417a064344bf1d8daff6fd0f0, type: 3}
+  m_MapAsset: {fileID: 0}
   m_Width: 12
   m_Height: 12
   m_LimitRotate: 9999
@@ -245,12 +245,12 @@ MonoBehaviour:
   m_TileLayerMask:
     serializedVersion: 2
     m_Bits: 512
-  m_TileBorderFolder: Tiles/Desert/Borders
+  m_TileBorderFolder: Tiles/Ice/Borders/
   m_BorderPrefabs: []
-  m_TileFolder: Tiles/Desert/Tiles
+  m_TileFolder: Tiles/Ice/Tiles/
   m_TilePrefabs: []
   m_MarkerRoot: {fileID: 862252866}
-  m_MarkerFolder: Markers/Desert//
+  m_MarkerFolder: Markers/Ice/
   m_MarkerPrefabs: []
   m_CloudLayerMask:
     serializedVersion: 2
@@ -476,7 +476,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.99215686, g: 0.92941177, b: 0.5019608, a: 0}
+  m_BackGroundColor: {r: 0.6650944, g: 1, b: 0.8939871, a: 1}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -583,6 +583,11 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   m_PopTime: 1
+  OnEndPop:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &862252865
 GameObject:
   m_ObjectHideFlags: 0
